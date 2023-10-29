@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar-mobile">
+    <div class="container flex align-items-center justify-between">
+      <div class="logo-navbar">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="hamburger" onclick="handleclick()">
+        <img src="./images/icon-hamburger.svg" alt="hamburger"/>
+      </div>
+    </div>
+    <div class="nav-item-mobile row align-items-center">
+      <div class="items row align-items-center">
+        <div class="item row align-items-center" style="width: 100%;">
+            <div class="flex align-items-center x-mobile">
+              <span>Product</span>
+              <img src="./images/icon-arrow-dark.svg" width="12" alt="arrow"/>
+            </div>
+            <ul class="row align-items-center">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+        </div>
+        <div class="item row align-items-center" style="width: 100%;">
+            <div class="flex align-items-center x-mobile">
+              <span>Company</span>
+              <img src="./images/icon-arrow-dark.svg" width="12" alt="arrow" />
+            </div>
+            <ul class="row align-items-center">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+        </div>
+        <div class="item row align-items-center" style="width: 100%;">
+            <div class="flex align-items-center x-mobile">
+              <span>Connect</span>
+              <img src="./images/icon-arrow-dark.svg" width="12" alt="arrow" />
+            </div>
+            <ul class="row align-items-center">
+              <li>Contact</li>
+              <li>Newletter</li>
+              <li>LinkedIn</li>
+            </ul>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="login row align-items-center">
+        <span>Login</span>
+        <span class="flex justify-center">Sign Up</span>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container h-100 flex justify-between align-items-center">
+      <div class="logo-navbar">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="nav-container">
+        <div class="nav-item">
+          <div>
+            <p>Product</p>
+            <img src="./images/icon-arrow-light.svg" width="11" alt="arrow" />
+          </div>
+          <ul class="nav-item-list">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <div>
+            <p>
+              Company
+            </p>
+            <img src="./images/icon-arrow-light.svg" width="11" alt="arrow" />
+          </div>
+          <ul class="nav-item-list">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <div>
+            <p>
+              Connect
+            </p>
+            <img src="./images/icon-arrow-light.svg" width="11" alt="arrow" />
+          </div>
+          <ul class="nav-item-list">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="account">
+        <div class="login">
+          <span>
+            Login
+          </span>
+        </div>
+        <div class="sign-up">
+          <span>
+            Sign Up
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="image-bg">
+      <img src="./images/bg-pattern-intro-desktop.svg" />
+    </div>
+    <div class="container  h-100 forward">
+      <div class="banner-header">
+        <div class="banner-header-center">
+          <div class="header-text">
+            <span>
+              A modern publishing platform
+            </span>
+            <span>
+              Grow your audience and build your online brand
+            </span>
+          </div>
+          <div class="banner-buttons">
+            <div class="start-for-free">
+              <span>
+                Start for Free
+              </span>
+            </div>
+            <div class="learn-more">
+              <span>
+                Learn More
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="one">
+    <div class="container position-relative align-items-center">
+      <div class="row align-items-center">
+        <span class="header-text-content">
+          Designed for the future
+        </span>
+        <div class="flex md-flex-column md-align-center height-one-content">
+          <div class="row space-between one-content-text">
+            <div class="row one-content-content">
+              <span>
+                Introducing an extensible editor
+              </span>
+              <span>
+                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </span>
+            </div>
+            <div class="row one-content-content">
+              <span>
+                Robust content management
+              </span>
+              <span>
+                Flexible content management enables users to easily move through posts. Increase the usability of your
+                blog
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+                control.
+              </span>
+            </div>
+          </div>
+          <div class="one-content-image">
+            <img src="./images/illustration-editor-desktop.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="bg-two">
+    <section class="two">
+      <div class="container position-relative">
+        <div class="flex align-items-center" style="position: relative;">
+          <div class="row two-content-text">
+            <span>
+              State of the Art Infrastructure
+            </span>
+            <span>
+              With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+              connectivity.
+              This ensures your site will load instantly, no matter where your readers are, keeping your site
+              competitive.
+            </span>
+          </div>
+
+        </div>
+        <div class="bg-image-two">
+          <img src="./images/bg-pattern-circles.svg" />
+        </div>
+      </div>
+    </section>
+    <div class="container position-relative">
+      <div class="two-content-image">
+        <img src="./images/illustration-phones.svg" />
+      </div>
+    </div>
+  </div>
+
+  <section class="three">
+    <div class="container h-100 flex align-items-center position-relative">
+      <div class="bg-image-three">
+        <img src="./images/illustration-laptop-desktop.svg" />
+      </div>
+      <div class="row three-content-text">
+        <div class="row">
+          <span>
+            Free, open, simple
+          </span>
+          <span>
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+            tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </span>
+        </div>
+        <div class="row">
+          <span>
+            Powerful tooling
+          </span>
+          <span>
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+            breeze,
+            but
+            capable of producing even the most complicated sites.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="align-items-center flex">
+    <div class="flex justify-between md-align-center md-flex-column container">
+      <div class="footer-item">
+        <div class="logo-footer">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="footer-item">
+        <span>
+          Product
+        </span>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <span>
+          Company
+        </span>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <span>Connect</span>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Rizky Dwi Yuliyanto</a>.
+  </div>
+  <script>
+    const banner = document.querySelector(".banner");
+    const bannerHeader = document.querySelector(".header-text")
+    const navItem = document.querySelectorAll('.nav-item')
+    const navItemList = document.querySelectorAll('.nav-item-list')
+    const navbar = document.querySelector(".navbar")
+    const navbar_mobile = document.querySelector(".navbar-mobile")
+    const nav_item_mobile = document.querySelector(".nav-item-mobile");
+    const x_mobile = document.querySelectorAll(".x-mobile");
+    const imgNavbarMobile = document.querySelector(".hamburger").children["0"];
+    let open = false;
+    const openNavbarMobile = () => {
+      nav_item_mobile.style.display = "block"
+      console.log(nav_item_mobile.children["0"])
+      imgNavbarMobile.src="./images/icon-close.svg"
+      if (!open) {
+        nav_item_mobile.style.display = "none"
+        imgNavbarMobile.src="./images/icon-hamburger.svg"
+      }
+    }
+    console.log(bannerHeader.offsetHeight)
+    console.log(banner.offsetHeight)
+    document.onscroll = () => {
+      navbar.style.backgroundColor = "transparent"
+      navbar_mobile.style.backgroundColor = "transparent"
+      if (parseInt(window.scrollY) > bannerHeader.offsetHeight) {
+        navbar.style.backgroundColor = "hsl(356, 100%, 66%)"
+        navbar_mobile.style.backgroundColor = "hsl(356, 100%, 66%)"
+      }
+    }
+    openNavbarMobile()
+    const handleclick = (e) => {
+      open = !open
+      openNavbarMobile()
+    }
+    x_mobile.forEach((elem, idx) => {
+      elem.onclick = () => {
+        let height = elem.nextElementSibling.scrollHeight;
+        x_mobile.forEach((elem, idx2) => {
+          if (idx !== idx2) {            
+            elem.parentElement.style.height="20px"
+            elem.children["1"].classList.remove("rotate")
+            elem.children["0"].style.color = "hsl(208, 49%, 24%)"
+          }else {
+            if (elem.parentElement.style.height === (height + 40) +"px") {
+              elem.parentElement.style.height="20px"
+              elem.children["0"].style.color = "hsl(208, 49%, 24%)"
+              elem.children["1"].classList.remove("rotate")
+            }else{
+              elem.parentElement.style.height= (height + 40)+"px";
+              elem.children["0"].style.color = "#8F99A2"
+              elem.children["1"].classList.add("rotate")
+            }
+          }
+        })
+      }
+    })
+    navItem.forEach((elem, idx) => {
+      elem.children["0"].onmouseenter = () => {
+        navItemList.forEach((elem2, idx2) => {
+          if (idx !== idx2) {
+            elem2.classList.remove("show-nav-item")
+          } else {
+            navItemList[idx].classList.add("show-nav-item")
+          }
+        })
+      }
+      navItemList[idx].onmouseleave = () => {
+        console.log(idx, "leave")
+        navItemList[idx].classList.remove("show-nav-item")
+      }
+    })
+  </script>
+</body>
+
+</html>
