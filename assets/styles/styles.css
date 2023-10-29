@@ -76,6 +76,7 @@
   top: 100px;
   padding: 2em 1em;
   font-family: "Overpass";
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .navbar-mobile .nav-item-mobile .items {
   height: 100%;
@@ -230,7 +231,7 @@
   border-radius: 8px;
   opacity: 0;
   transition: opacity 0.2s ease-in 0s;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .navbar .nav-container .nav-item .nav-item-list li {
   list-style-type: none;
